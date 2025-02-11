@@ -26,14 +26,14 @@ export default function Navbar() {
 
   const links = (
     <>
-      <li>
+      <li className="dark:text-white">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li>
+      <li className="dark:text-white">
         <NavLink to="/assignments">Assignments</NavLink>
       </li>
       {user && (
-        <li>
+        <li className="dark:text-white">
           <NavLink to="/pendingAssignments">Pending Assignments</NavLink>
         </li>
       )}
@@ -42,25 +42,25 @@ export default function Navbar() {
 
   const userLinks = (
     <>
-      <li>
+      <li className="dark:text-white">
         <NavLink to="/createAssignments">Create Assignments</NavLink>
       </li>
       <hr className="my-2" />
-      <li>
+      <li className="dark:text-white">
         <NavLink to="/myAttemptedAssignments">My Attempted Assignments</NavLink>
       </li>
     </>
   );
 
   return (
-    <div className="bg-green-200">
+    <div className="bg-[#16C47F]">
       <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 dark:text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -75,7 +75,7 @@ export default function Navbar() {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow "
             >
               {links}
             </ul>
@@ -85,7 +85,7 @@ export default function Navbar() {
             <div className="flex items-center">
               <img className="h-10" src={logo} alt="Logo" />
 
-              <p className="text-xl font-bold hover:bg-gray-100/50 px-4 py-2 rounded-lg text-blue-500 ml-2 hidden sm:block ">
+              <p className="text-xl font-bold hover:bg-gray-100/50 px-4 py-2 rounded-lg  ml-2 hidden sm:block dark:text-white">
                 Study Buddy
               </p>
             </div>
@@ -97,7 +97,7 @@ export default function Navbar() {
         <div className="navbar-end">
           <button
             onClick={toggleTheme}
-            className="btn btn-sm btn-outline btn-info mr-2"
+            className="btn btn-sm btn-outline mr-2 dark:text-white border-none hover:text-black dark:hover:bg-white"
           >
             {theme === "light" ? "Dark" : "Light"}
           </button>

@@ -11,8 +11,8 @@ export default function Hero() {
   <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-neutral-content text-center">
     <div className="max-w-md">
-      <h1 className="mb-5 text-5xl font-bold">Learn Together, Succeed Together!</h1>
-      <p className="mb-5 text-xl">
+      <h1 className="mb-5 text-5xl font-bold dark:text-white">Learn Together, Succeed Together!</h1>
+      <p className="mb-5 text-xl dark:text-white">
       Your ultimate platform for collaborative learning! Study Buddy is designed to make group study more engaging, productive, and efficient. 
       </p>
       <div className='flex flex-col items-center justify-center mt-20 text-yellow-300'>
