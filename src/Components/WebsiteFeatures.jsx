@@ -20,7 +20,7 @@ const Features = () => {
   ];
 
   return (
-    <div className="bg-[#E1FFBB]  py-20">
+    <div className="bg-[#41B3A2]  py-20">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-gray-800 text-center mb-8 ">
           Why Choose Study Buddy?

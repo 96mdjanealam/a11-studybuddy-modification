@@ -44,6 +44,11 @@ export default function Login() {
         <h2 className="text-2xl font-semibold text-center pb-10">
           Login your account
         </h2>
+        <div className="mb-4 italic">
+          <h3>Login info:</h3>
+          <p>email: alamrayhan025@gmail.com</p>
+          <p>Password: Beaconmc</p>
+        </div>
         <form onSubmit={handleSubmit} className="card-body p-0">
           <div className="form-control">
             <label className="label">
