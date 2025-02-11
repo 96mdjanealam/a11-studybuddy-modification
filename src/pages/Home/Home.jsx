@@ -11,7 +11,9 @@ export default function Home() {
       <Hero></Hero>
       <WebsiteFeatures></WebsiteFeatures>
       <Features></Features>
+      <section id='howItWorks'>
       <HowItWorks></HowItWorks>
+      </section>
       <Reviews></Reviews>
     </div>
   )
