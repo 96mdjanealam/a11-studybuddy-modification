@@ -206,7 +206,7 @@ export default function UpdateAssignment() {
           </div>
 
           <div className="form-control mt-6">
-            <button type="submit" className="btn btn-neutral">
+            <button type="submit" className="btn btn-success">
               Update Assignment
             </button>
           </div>

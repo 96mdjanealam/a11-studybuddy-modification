@@ -133,7 +133,7 @@ export default function Register() {
             </label>
           )}
           <div className="form-control mt-6">
-            <button type="submit" className="btn btn-neutral">
+            <button type="submit" className="btn btn-success">
               Register
             </button>
           </div>
