@@ -183,7 +183,7 @@ export default function CreateAssignments() {
           </div>
 
           <div className="form-control mt-6">
-            <button type="submit" className="btn btn-neutral">
+            <button type="submit" className="btn btn-success">
               Create Assignment
             </button>
           </div>

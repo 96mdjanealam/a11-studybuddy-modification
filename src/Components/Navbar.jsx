@@ -140,7 +140,7 @@ export default function Navbar() {
         <div className="navbar-end">
           <button
             onClick={toggleTheme}
-            className="btn btn-sm border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 mr-2"
+            className="btn btn-sm bg-gray-100 border-none dark:bg-gray-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 px-3 mr-2"
           >
             {theme === "light" ? "Dark" : "Light"}
           </button>
@@ -164,14 +164,14 @@ export default function Navbar() {
               </div>
               <button
                 onClick={handleLogout}
-                className="btn bg-red-500 dark:bg-red-600 text-white hover:bg-red-600 dark:hover:bg-red-700"
+                className="btn btn-error border-none  text-white "
               >
                 Logout
               </button>
             </div>
           ) : (
             <Link to="/login">
-              <button className="btn bg-blue-500 dark:bg-blue-600 text-white hover:bg-blue-600 dark:hover:bg-blue-700">
+              <button className="btn  text-white border-none btn-success">
                 Login
               </button>
             </Link>

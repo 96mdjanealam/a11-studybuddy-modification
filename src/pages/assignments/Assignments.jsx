@@ -91,11 +91,11 @@ export default function Assignments() {
 
               <div className="flex mt-5 gap-2">
                 <button onClick={() => handleView(assignment._id)}
-                  className="bg-blue-600 text-white font-bold btn btn-xs rounded-lg hover:bg-blue-700">View</button>
+                  className="  font-bold btn btn-xs btn-success">View</button>
                 <button onClick={() => handleUpdate(assignment._id)}
-                  className={`bg-green-600 text-white font-bold btn btn-xs rounded-lg hover:bg-green-700 ${user?.email !== assignment?.email ? "opacity-50 cursor-not-allowed" : ""}`}>Update</button>
+                  className={` font-bold btn btn-xs btn-success ${user?.email !== assignment?.email ? "opacity-50 cursor-not-allowed" : ""}`}>Update</button>
                 <button onClick={() => handleDelete(assignment._id)}
-                  className={`bg-red-600 text-white font-bold btn btn-xs rounded-lg hover:bg-red-700 ${user?.email !== assignment?.email ? "opacity-50 cursor-not-allowed" : ""}`}>Delete</button>
+                  className={` font-bold btn btn-xs btn-error ${user?.email !== assignment?.email ? "opacity-50 cursor-not-allowed" : ""}`}>Delete</button>
               </div>
             </div>
           </div>
